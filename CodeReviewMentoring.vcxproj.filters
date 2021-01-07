@@ -17,14 +17,8 @@
     <ClCompile Include="CodeReviewMentoring.cpp">
       <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="UUserWidget.cpp">
-      <Filter>Source\UI</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="UUserWidget.h">
-      <Filter>Source\UI</Filter>
-    </ClInclude>
     <ClInclude Include="Core\CoreMinimal.h">
       <Filter>Source</Filter>
     </ClInclude>

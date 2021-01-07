@@ -24,6 +24,7 @@
     <ProjectGuid>{3f7019f0-f8a7-4190-af33-496c6ba392b0}</ProjectGuid>
     <RootNamespace>CodeReviewMentoring</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>ProjectM</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -140,11 +141,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CodeReviewMentoring.cpp" />
-    <ClCompile Include="UUserWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Core\CoreMinimal.h" />
-    <ClInclude Include="UUserWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
