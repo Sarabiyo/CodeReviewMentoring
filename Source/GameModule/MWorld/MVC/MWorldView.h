@@ -7,5 +7,11 @@ class FMWorldView : public IMWorldView
 public:
 	FMWorldView();
 	virtual ~FMWorldView();
+
+	virtual void Init() override;
+
+
+private:
+	void initHudInfo();
 };
 

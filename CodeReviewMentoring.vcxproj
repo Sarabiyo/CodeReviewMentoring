@@ -151,10 +151,13 @@
     <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldModel.cpp" />
     <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldView.cpp" />
     <ClCompile Include="Source\Holder\MMvcHolder.cpp" />
-    <ClCompile Include="Source\Slates\Components\UUserWidget.cpp" />
+    <ClCompile Include="Source\Net\MNetSession.cpp" />
+    <ClCompile Include="Source\Slates\Components\UserWidget.cpp" />
+    <ClCompile Include="Source\UI\MUiMainPanel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\CoreMinimal.h" />
+    <ClInclude Include="Source\Core\MLog.h" />
     <ClInclude Include="Source\GameModule\AGameMode.h" />
     <ClInclude Include="Source\GameModule\MWorld\AMGameMode.h" />
     <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldController.h" />
@@ -165,7 +168,9 @@
     <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldView.h" />
     <ClInclude Include="Source\GameModule\MWorld\MWorldDef.h" />
     <ClInclude Include="Source\Holder\MMvcHolder.h" />
-    <ClInclude Include="Source\Slates\Components\UUserWidget.h" />
+    <ClInclude Include="Source\Net\MNetSession.h" />
+    <ClInclude Include="Source\Slates\Components\UserWidget.h" />
+    <ClInclude Include="Source\UI\MUiMainPanel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

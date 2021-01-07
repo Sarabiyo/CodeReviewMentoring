@@ -39,6 +39,12 @@
     <Filter Include="Source\Holder">
       <UniqueIdentifier>{7a8a8073-afc1-4f5f-a145-ff50985bd8cc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source\UI">
+      <UniqueIdentifier>{8ddf6083-5289-49ed-bfd7-69053f688d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\NetSession">
+      <UniqueIdentifier>{3b53b81d-a678-4229-8f84-7ac5ebb9345a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CodeReviewMentoring.cpp">
@@ -49,9 +55,6 @@
     </ClCompile>
     <ClCompile Include="Source\GameModule\MWorld\AMGameMode.cpp">
       <Filter>Source\GameModule\MWorld</Filter>
-    </ClCompile>
-    <ClCompile Include="Source\Slates\Components\UUserWidget.cpp">
-      <Filter>Source\Slates\Components</Filter>
     </ClCompile>
     <ClCompile Include="Source\GameModule\AGameMode.cpp">
       <Filter>Source\GameModule</Filter>
@@ -65,6 +68,15 @@
     <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldView.cpp">
       <Filter>Source\GameModule\MWorld\MVC</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Slates\Components\UserWidget.cpp">
+      <Filter>Source\Slates\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\UI\MUiMainPanel.cpp">
+      <Filter>Source\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Net\MNetSession.cpp">
+      <Filter>Source\NetSession</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Holder\MMvcHolder.h">
@@ -75,9 +87,6 @@
     </ClInclude>
     <ClInclude Include="Source\GameModule\MWorld\AMGameMode.h">
       <Filter>Source\GameModule\MWorld</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Slates\Components\UUserWidget.h">
-      <Filter>Source\Slates\Components</Filter>
     </ClInclude>
     <ClInclude Include="Source\GameModule\AGameMode.h">
       <Filter>Source\GameModule</Filter>
@@ -102,6 +111,18 @@
     </ClInclude>
     <ClInclude Include="Source\GameModule\MWorld\MWorldDef.h">
       <Filter>Source\GameModule\MWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Slates\Components\UserWidget.h">
+      <Filter>Source\Slates\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\UI\MUiMainPanel.h">
+      <Filter>Source\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Net\MNetSession.h">
+      <Filter>Source\NetSession</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\MLog.h">
+      <Filter>Source\Core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

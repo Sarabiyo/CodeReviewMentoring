@@ -6,30 +6,34 @@ class IMWorldModel;
 class IMWorldView;
 class IMWorldController;
 
-class MMvcHolder
+class FMMvcHolder
 {
 public:
-	static MMvcHolder& Get();
+	static FMMvcHolder& Get();
 
 	/** 싱글톤 인스턴스 파괴 */
-	static void Destroy();
+	static void ReleaseGameModules();
+
+	/** 월드 인스턴스 생성 */
+	void InitWorldMVC();
 
 	/** 리셋 */
 	void Reset();
 
-	/** World MVC Set */
-	void SetWorldModel(shared_ptr<IMWorldModel> worldModel) { WorldModelSp.swap(worldModel);}
+	/** World MVC Get */
 	shared_ptr<IMWorldModel> GetWorldModel() { return WorldModelSp; }
-
-	void SetWorldView(shared_ptr<IMWorldView> worldView) { WorldViewSp.swap(worldView); }
 	shared_ptr<IMWorldView> GetWorldView() { return WorldViewSp; }
-
-	void SetWorldController(shared_ptr<IMWorldController> worldcontroller) { WorldControllerSp.swap(worldcontroller); }
 	shared_ptr<IMWorldController> GetWorldController() { return WorldControllerSp; }
+	//
+private:
+	/** World MVC set */
+	void setWorldModel(shared_ptr<IMWorldModel> worldModel) { WorldModelSp.swap(worldModel); }
+	void setWorldView(shared_ptr<IMWorldView> worldView) { WorldViewSp.swap(worldView); }
+	void setWorldController(shared_ptr<IMWorldController> worldcontroller) { WorldControllerSp.swap(worldcontroller); }
 	//
 
 private:
-	static shared_ptr<MMvcHolder> MvcHolder;
+	static shared_ptr<FMMvcHolder> MvcHolder;
 
 	/** World MVC Interface */
 	shared_ptr<IMWorldModel> WorldModelSp;

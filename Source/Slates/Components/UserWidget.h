@@ -10,5 +10,8 @@ class UUserWidget
 public:
 	UUserWidget();
 	virtual ~UUserWidget();
+
+	virtual void NativeConstruct();
+	virtual void NativeDestruct();
 };
 

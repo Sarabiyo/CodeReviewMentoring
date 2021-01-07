@@ -2,7 +2,7 @@
 //
 
 #include <iostream>
-#include "Core/CoreMinimal.h"
+#include "GameModule/MWorld/AMGameMode.h"
 
 struct FMTestStruct
 {
@@ -11,9 +11,10 @@ struct FMTestStruct
 
 int main()
 {
-	shared_ptr<FMTestStruct> a;
+	AMGameMode* gameMode = new AMGameMode();
+	gameMode->StartPlay();
 
-	int32 b = 1;
+	gameMode->EndPlay();
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴
