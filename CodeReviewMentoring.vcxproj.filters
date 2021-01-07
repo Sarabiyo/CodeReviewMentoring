@@ -9,18 +9,96 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Source\UI">
+    <Filter Include="Source\Slates">
       <UniqueIdentifier>{2acb5f5d-48a2-494a-ab45-61865e9b04ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Slates\Components">
+      <UniqueIdentifier>{439acf58-7209-4256-b687-a0a9bd005969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameModule">
+      <UniqueIdentifier>{f80aa76c-526e-4aae-aa12-77891eb824b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameModule\MWorld">
+      <UniqueIdentifier>{fad52e5c-25dd-4ab2-bf33-ac046ed9a6b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{814005b9-ef86-4616-b762-505ae6b9d44d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Main">
+      <UniqueIdentifier>{2e4c3720-ed69-4ba7-8cb8-9c4093424dd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameModule\MWorld\Interface">
+      <UniqueIdentifier>{63f301cf-b20e-4cea-8d93-bf89cd282a5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameModule\MWorld\MVC">
+      <UniqueIdentifier>{b708f885-7d87-45ec-9bf1-9b79c85df890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameModule\MWorld\UI">
+      <UniqueIdentifier>{9895e89d-f951-4423-8bbb-f7dac824319d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Holder">
+      <UniqueIdentifier>{7a8a8073-afc1-4f5f-a145-ff50985bd8cc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CodeReviewMentoring.cpp">
-      <Filter>Source</Filter>
+      <Filter>Source\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Holder\MMvcHolder.cpp">
+      <Filter>Source\Holder</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameModule\MWorld\AMGameMode.cpp">
+      <Filter>Source\GameModule\MWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Slates\Components\UUserWidget.cpp">
+      <Filter>Source\Slates\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameModule\AGameMode.cpp">
+      <Filter>Source\GameModule</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldController.cpp">
+      <Filter>Source\GameModule\MWorld\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldModel.cpp">
+      <Filter>Source\GameModule\MWorld\MVC</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldView.cpp">
+      <Filter>Source\GameModule\MWorld\MVC</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\CoreMinimal.h">
-      <Filter>Source</Filter>
+    <ClInclude Include="Source\Holder\MMvcHolder.h">
+      <Filter>Source\Holder</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\CoreMinimal.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\AMGameMode.h">
+      <Filter>Source\GameModule\MWorld</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Slates\Components\UUserWidget.h">
+      <Filter>Source\Slates\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\AGameMode.h">
+      <Filter>Source\GameModule</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldController.h">
+      <Filter>Source\GameModule\MWorld\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldModel.h">
+      <Filter>Source\GameModule\MWorld\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldView.h">
+      <Filter>Source\GameModule\MWorld\MVC</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldController.h">
+      <Filter>Source\GameModule\MWorld\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldModel.h">
+      <Filter>Source\GameModule\MWorld\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldView.h">
+      <Filter>Source\GameModule\MWorld\Interface</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

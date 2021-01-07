@@ -4,10 +4,16 @@
 #include <iostream>
 #include "Core/CoreMinimal.h"
 
+struct FMTestStruct
+{
+	int32 t;
+};
+
 int main()
 {
-    std::cout << "Hello World!\n";
-    // 테스트
+	shared_ptr<FMTestStruct> a;
+
+	int32 b = 1;
 }
 
 // 프로그램 실행: <Ctrl+F5> 또는 [디버그] > [디버깅하지 않고 시작] 메뉴

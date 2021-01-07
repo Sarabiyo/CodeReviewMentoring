@@ -73,6 +73,9 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)/Source;</IncludePath>
+    <ReferencePath>$(VC_ReferencesPath_x86);</ReferencePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -89,6 +92,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)/Source;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,9 +145,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CodeReviewMentoring.cpp" />
+    <ClCompile Include="Source\GameModule\AGameMode.cpp" />
+    <ClCompile Include="Source\GameModule\MWorld\AMGameMode.cpp" />
+    <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldController.cpp" />
+    <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldModel.cpp" />
+    <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldView.cpp" />
+    <ClCompile Include="Source\Holder\MMvcHolder.cpp" />
+    <ClCompile Include="Source\Slates\Components\UUserWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Core\CoreMinimal.h" />
+    <ClInclude Include="Source\Core\CoreMinimal.h" />
+    <ClInclude Include="Source\GameModule\AGameMode.h" />
+    <ClInclude Include="Source\GameModule\MWorld\AMGameMode.h" />
+    <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldController.h" />
+    <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldModel.h" />
+    <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldView.h" />
+    <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldController.h" />
+    <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldModel.h" />
+    <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldView.h" />
+    <ClInclude Include="Source\Holder\MMvcHolder.h" />
+    <ClInclude Include="Source\Slates\Components\UUserWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
