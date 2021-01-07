@@ -9,9 +9,7 @@ class AMGameMode : public AGameMode
 
 public:
 	/** AGameModule Functions */
-	virtual void BeginPlay() override;
+	virtual void StartPlay() override;
 	virtual void EndPlay() override;
 	//
-
 };
-

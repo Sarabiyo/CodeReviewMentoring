@@ -10,7 +10,7 @@ AGameMode::~AGameMode()
 
 }
 
-void AGameMode::BeginPlay()
+void AGameMode::StartPlay()
 {
 
 }

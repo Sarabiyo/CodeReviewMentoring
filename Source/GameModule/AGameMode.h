@@ -11,8 +11,7 @@ public:
 	AGameMode();
 	virtual ~AGameMode();
 
-	virtual void BeginPlay();
+	virtual void StartPlay();
 	virtual void EndPlay();
-
 };
 

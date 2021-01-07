@@ -1,8 +1,8 @@
 #include "AMGameMode.h"
 
-void AMGameMode::BeginPlay()
+void AMGameMode::StartPlay()
 {
-	AGameMode::BeginPlay();
+	AGameMode::StartPlay();
 }
 
 void AMGameMode::EndPlay()
