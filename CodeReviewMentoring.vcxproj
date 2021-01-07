@@ -163,6 +163,7 @@
     <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldController.h" />
     <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldModel.h" />
     <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldView.h" />
+    <ClInclude Include="Source\GameModule\MWorld\MWorldDef.h" />
     <ClInclude Include="Source\Holder\MMvcHolder.h" />
     <ClInclude Include="Source\Slates\Components\UUserWidget.h" />
   </ItemGroup>

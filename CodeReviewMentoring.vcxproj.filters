@@ -100,5 +100,8 @@
     <ClInclude Include="Source\GameModule\MWorld\Interface\IMWorldView.h">
       <Filter>Source\GameModule\MWorld\Interface</Filter>
     </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\MWorldDef.h">
+      <Filter>Source\GameModule\MWorld</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

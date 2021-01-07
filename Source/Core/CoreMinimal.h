@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <string>
 #include <memory>
 
 using namespace std;
@@ -16,4 +17,5 @@ using namespace std;
 
 #define GENERATED_BODY()
 
-#define int32 int
+using int32 = int;
+using FString = std::string;
