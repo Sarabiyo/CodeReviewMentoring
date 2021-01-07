@@ -8,7 +8,7 @@ class AMGameMode : public AGameMode
 	GENERATED_BODY()
 
 public:
-	/** AGameModule Functions */
+	/** AGameModule Intefaces */
 	virtual void StartPlay() override;
 	virtual void EndPlay() override;
 	//

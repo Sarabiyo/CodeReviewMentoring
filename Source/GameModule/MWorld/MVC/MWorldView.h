@@ -10,8 +10,10 @@ public:
 
 	virtual void Init() override;
 
+	/** 계정 정보 리스트 */
+	virtual void AckAccountInfos() override;
 
-private:
-	void initHudInfo();
+	/** 계정 정보 페이지 */
+	void OpenAccountPage();
 };
 

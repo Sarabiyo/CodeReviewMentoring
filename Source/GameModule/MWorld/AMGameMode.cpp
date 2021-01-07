@@ -14,6 +14,12 @@ void AMGameMode::StartPlay()
 	/** 월드 MVC 생성*/
 	mvcHolder.InitWorldMVC();
 
+	shared_ptr<IMWorldModel> worldModelSp = mvcHolder.GetWorldModel();
+	if (worldModelSp != nullptr)
+	{
+		worldModelSp->Init();
+	}
+
 	shared_ptr<IMWorldController> worldControllerSp = mvcHolder.GetWorldController();
 	if (worldControllerSp != nullptr)
 	{

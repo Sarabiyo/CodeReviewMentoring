@@ -12,8 +12,14 @@ public:
 	UMUiMainPanel();
 	virtual ~UMUiMainPanel();
 
-
+	/** UUserWidget Interfaces */
 	virtual void NativeConstruct() override;
 	virtual void NativeDestruct() override;
+	//
+
+	/** UMUiMainPanel Interfaces */
+	virtual void Back();
+	virtual void Close();
+	//
 };
 

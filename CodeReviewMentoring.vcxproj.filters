@@ -47,9 +47,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CodeReviewMentoring.cpp">
-      <Filter>Source\Main</Filter>
-    </ClCompile>
     <ClCompile Include="Source\Holder\MMvcHolder.cpp">
       <Filter>Source\Holder</Filter>
     </ClCompile>
@@ -76,6 +73,18 @@
     </ClCompile>
     <ClCompile Include="Source\Net\MNetSession.cpp">
       <Filter>Source\NetSession</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameModule\MWorld\UI\MUiAccountPage.cpp">
+      <Filter>Source\GameModule\MWorld\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Slates\Components\TextBlock.cpp">
+      <Filter>Source\Slates\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Slates\Components\Widget.cpp">
+      <Filter>Source\Slates\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source\Main</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +132,18 @@
     </ClInclude>
     <ClInclude Include="Source\Core\MLog.h">
       <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Slates\Util\WidgetUtil.h">
+      <Filter>Source\Slates</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameModule\MWorld\UI\MUiAccountPage.h">
+      <Filter>Source\GameModule\MWorld\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Slates\Components\TextBlock.h">
+      <Filter>Source\Slates\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Slates\Components\Widget.h">
+      <Filter>Source\Slates\Components</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

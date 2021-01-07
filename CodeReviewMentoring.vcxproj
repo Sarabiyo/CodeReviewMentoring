@@ -144,15 +144,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CodeReviewMentoring.cpp" />
+    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Source\GameModule\AGameMode.cpp" />
     <ClCompile Include="Source\GameModule\MWorld\AMGameMode.cpp" />
     <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldController.cpp" />
     <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldModel.cpp" />
     <ClCompile Include="Source\GameModule\MWorld\MVC\MWorldView.cpp" />
+    <ClCompile Include="Source\GameModule\MWorld\UI\MUiAccountPage.cpp" />
     <ClCompile Include="Source\Holder\MMvcHolder.cpp" />
     <ClCompile Include="Source\Net\MNetSession.cpp" />
+    <ClCompile Include="Source\Slates\Components\TextBlock.cpp" />
     <ClCompile Include="Source\Slates\Components\UserWidget.cpp" />
+    <ClCompile Include="Source\Slates\Components\Widget.cpp" />
     <ClCompile Include="Source\UI\MUiMainPanel.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -167,9 +170,13 @@
     <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldModel.h" />
     <ClInclude Include="Source\GameModule\MWorld\MVC\MWorldView.h" />
     <ClInclude Include="Source\GameModule\MWorld\MWorldDef.h" />
+    <ClInclude Include="Source\GameModule\MWorld\UI\MUiAccountPage.h" />
     <ClInclude Include="Source\Holder\MMvcHolder.h" />
     <ClInclude Include="Source\Net\MNetSession.h" />
+    <ClInclude Include="Source\Slates\Components\TextBlock.h" />
     <ClInclude Include="Source\Slates\Components\UserWidget.h" />
+    <ClInclude Include="Source\Slates\Components\Widget.h" />
+    <ClInclude Include="Source\Slates\Util\WidgetUtil.h" />
     <ClInclude Include="Source\UI\MUiMainPanel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

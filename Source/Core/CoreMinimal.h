@@ -5,6 +5,7 @@
 #include <memory>
 #include <functional>
 #include <map>
+#include <vector>
 
 using namespace std;
 
@@ -21,3 +22,4 @@ using namespace std;
 
 using int32 = int;
 using FString = std::string;
+using FText = FString;			// юс╫ц

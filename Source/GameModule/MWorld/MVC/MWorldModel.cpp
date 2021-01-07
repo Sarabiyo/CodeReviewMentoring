@@ -10,6 +10,10 @@ FMWorldModel::~FMWorldModel()
 {
 }
 
+void FMWorldModel::Init()
+{
+}
+
 void FMWorldModel::UpdateAccountInfo(const FMAccountInfo& accountInfo)
 {
 	const int32 uniqueId = accountInfo.uniqueId;
@@ -19,9 +23,11 @@ void FMWorldModel::UpdateAccountInfo(const FMAccountInfo& accountInfo)
 	shared_ptr<FMAccountInfo> accontInfoSp = FindAccountInfo(uniqueId);
 	if (accontInfoSp == nullptr)
 	{
-		AccountInfoMap.emplace(uniqueId, make_shared<FMAccountInfo>(uniqueId));
+		accontInfoSp = make_shared<FMAccountInfo>(uniqueId);
+		AccountInfoMap.emplace(uniqueId, accontInfoSp);
 	}
-
+	
+	accontInfoSp->uniqueId = accountInfo.uniqueId;
 	accontInfoSp->name = accountInfo.name;
 }
 
@@ -34,6 +40,11 @@ shared_ptr<FMAccountInfo> FMWorldModel::FindAccountInfo(int32 uniqueId)
 		return it->second;
 	}
 	return nullptr;
+}
+
+void FMWorldModel::SetMyAccountId(int32 uniqueId)
+{
+	MyAccountId = uniqueId;
 }
 
 shared_ptr<FMAccountInfo> FMWorldModel::GetMyAccountInfo()
