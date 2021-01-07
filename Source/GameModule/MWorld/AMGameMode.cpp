@@ -15,18 +15,16 @@ void AMGameMode::StartPlay()
 	mvcHolder.InitWorldMVC();
 
 	shared_ptr<IMWorldController> worldControllerSp = mvcHolder.GetWorldController();
-	if (worldControllerSp)
+	if (worldControllerSp != nullptr)
 	{
 		worldControllerSp->Init();
 	}
 
 	shared_ptr<IMWorldView> worldViewSp = mvcHolder.GetWorldView();
-	if (worldViewSp)
+	if (worldViewSp != nullptr)
 	{
 		worldViewSp->Init();
 	}
-
-
 }
 
 void AMGameMode::EndPlay()
