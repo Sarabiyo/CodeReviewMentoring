@@ -2,9 +2,11 @@
 //
 
 #include <iostream>
+#include "Core/CoreMinimal.h"
 
 int main()
 {
+
     std::cout << "Hello World!\n";
     // 테스트
 }

@@ -140,6 +140,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CodeReviewMentoring.cpp" />
+    <ClCompile Include="UUserWidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\CoreMinimal.h" />
+    <ClInclude Include="UUserWidget.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
